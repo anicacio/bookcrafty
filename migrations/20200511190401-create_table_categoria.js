@@ -7,14 +7,14 @@ module.exports = {
       Return a promise to correctly handle asynchronicity.
     */
     return queryInterface.createTable('categoria', {
-      id: {
+      id_categoria: {
         type: Sequelize.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true
       },
       nome: {
-        type: Sequelize.STRING(60),
+        type: Sequelize.STRING(100),
         allowNull: false
       }
     });
